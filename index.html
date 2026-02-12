@@ -2,20 +2,44 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Hewan Gemay</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Hewan Peliharaan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>🐾 Hewan Gemay 🐾</h1>
-        <p>Koleksi hewan paling gemas di dunia 💖</p>
+        <h1>🐾 Hewan Peliharaan</h1>
+        <p class="subtitle">Sahabat Setia di Rumah</p>
 
-        <button onclick="ubahTeks()">Klik Aku!</button>
+        <div class="gallery">
+            <div class="card">
+                <img src="images/hito.jpg" alt="hito">
+                <h3>Kucing</h3>
+                <button onclick="showInfo('hito adalah kucing oren yang baik.')">Lihat Info</button>
+            </div>
 
-        <div id="hasil">Aku masih malu-malu 😳</div>
+            <div class="card">
+                <img src="images/miko.jpg" alt="miko">
+                <h3>Anjing</h3>
+                <button onclick="showInfo('miko adalah kucing yang galak dan pendiam.')">Lihat Info</button>
+            </div>
+
+            <div class="card">
+                <img src="images/mickey.jpg" alt="mickey">
+                <h3>Kelinci</h3>
+                <button onclick="showInfo('mickey adalah kucing putih yang manja.')">Lihat Info</button>
+            </div>
+
+            <div class="card">
+                <img src="images/mikha.jpg" alt="mikha">
+                <h3>Hamster</h3>
+                <button onclick="showInfo('mikha mempunyai bulu yang lembut dan imut.')">Lihat Info</button>
+            </div>
+        </div>
+
+        <div id="infoBox"></div>
     </div>
 
-    <script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
