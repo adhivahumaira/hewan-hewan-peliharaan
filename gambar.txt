@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 Reasons Why I Love You</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins', sans-serif;
+}
+
+/* BODY BACKGROUND */
+body{
+background: linear-gradient(180deg, #ffc0d9, #fcebd5);
+color:#444;
+}
+
+/* CONTAINER */
+section{
+padding:60px 25px;
+text-align:center;
+animation: fadeUp 1.2s ease forwards;
+opacity:0;
+}
+
+/* COVER */
+.cover{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+background: linear-gradient(rgba(255,182,193,0.6), rgba(255,218,185,0.6)),
+url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1000&q=80');
+background-size:cover;
+background-position:center;
+text-align:center;
+}
+
+.cover h1{
+font-size:32px;
+font-weight:700;
+margin-bottom:15px;
+animation: float 3s ease-in-out infinite;
+}
+
+.cover p{
+font-size:16px;
+max-width:300px;
+}
+
+/* REASON CARD */
+.reason{
+background:white;
+margin:25px 0;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+text-align:left;
+}
+
+.reason h2{
+color:#ff6f91;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.reason p{
+line-height:1.8;
+font-size:15px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+font-size:14px;
+color:#888;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+from{
+transform:translateY(40px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- COVER -->
+<section class="cover">
+<h1>4 Reasons Why I Love You 🤍</h1>
+<p>Scroll down and discover every little reason why my heart chooses you, again and again.</p>
+</section>
+
+<!-- CONTENT -->
+<section>
+
+<div class="reason">
+<h2>1. Because You Make Me Feel Safe</h2>
+<p>
+From the very beginning, you gave me a sense of comfort I never knew I needed.
+Being with you feels like coming home after a long, tiring day. 
+Your presence calms my storms, your voice softens my worries, 
+and your words wrap around my heart like the warmest hug.
+You make me feel protected, emotionally understood, and deeply valued.
+With you, I never feel alone — and that safety means everything to me.
+</p>
+</div>
+
+<div class="reason">
+<h2>2. Because You Support My Dreams</h2>
+<p>
+You believe in me even when I doubt myself.
+You encourage my goals, celebrate my small wins,
+and remind me that I am capable of more than I imagine.
+Your support is not loud or overwhelming — it is steady, sincere, and genuine.
+You stand beside me, not in front or behind,
+and that partnership makes me stronger every single day.
+</p>
+</div>
+
+<div class="reason">
+<h2>3. Because You Accept Me Completely</h2>
+<p>
+You see my flaws, my imperfections, my moods,
+and yet you choose me anyway.
+You never try to change who I am,
+but instead love me as I am while helping me grow.
+With you, I can be my true self — no pretending, no hiding.
+That kind of acceptance is rare,
+and I treasure it more than words can describe.
+</p>
+</div>
+
+<div class="reason">
+<h2>4. Because Loving You Feels Effortless</h2>
+<p>
+Loving you doesn’t feel forced.
+It flows naturally, like breathing.
+It’s in the small moments —
+the laughs, the conversations, the silence we share.
+Even on difficult days, my heart still chooses you.
+And that is how I know this love is real:
+it is not just intense,
+it is consistent, gentle, and sincere.
+</p>
+</div>
+
+</section>
+
+<footer>
+Made with love by <strong>Syaakira 11 12</strong> 🤍
+</footer>
+
+<script>
+
+/* Scroll Animation Trigger */
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.style.opacity = "1";
+}
+});
+});
+
+</script>
+
+</body>
+</html>
